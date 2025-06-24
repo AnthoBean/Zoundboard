@@ -1,0 +1,82 @@
+{
+  "sounds": [
+    {
+      "name": "Percussion 1",
+      "file": "assets/sounds/percussion/percussion_1.wav",
+      "category": "percussion",
+      "tags": [
+        "percussion"
+      ]
+    },
+    {
+      "name": "Percussion 2",
+      "file": "assets/sounds/percussion/percussion_2.wav",
+      "category": "percussion",
+      "tags": [
+        "percussion"
+      ]
+    },
+    {
+      "name": "Percussion 3",
+      "file": "assets/sounds/percussion/percussion_3.wav",
+      "category": "percussion",
+      "tags": [
+        "percussion"
+      ]
+    },
+    {
+      "name": "Clap 1",
+      "file": "assets/sounds/percussion/clap_1.wav",
+      "category": "percussion",
+      "tags": [
+        "percussion",
+        "clap"
+      ]
+    },
+    {
+      "name": "Clap 2",
+      "file": "assets/sounds/percussion/clap_2.wav",
+      "category": "percussion",
+      "tags": [
+        "percussion",
+        "clap"
+      ]
+    },
+    {
+      "name": "Clap 3",
+      "file": "assets/sounds/percussion/clap_3.wav",
+      "category": "percussion",
+      "tags": [
+        "percussion",
+        "clap"
+      ]
+    },
+    {
+      "name": "Tambourine 1",
+      "file": "assets/sounds/percussion/tambourine_1.wav",
+      "category": "percussion",
+      "tags": [
+        "tambourine",
+        "percussion"
+      ]
+    },
+    {
+      "name": "Tambourine 2",
+      "file": "assets/sounds/percussion/tambourine_2.wav",
+      "category": "percussion",
+      "tags": [
+        "tambourine",
+        "percussion"
+      ]
+    },
+    {
+      "name": "Tambourine 3",
+      "file": "assets/sounds/percussion/tambourine_3.wav",
+      "category": "percussion",
+      "tags": [
+        "tambourine",
+        "percussion"
+      ]
+    }
+  ]
+}

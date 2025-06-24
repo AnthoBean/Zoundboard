@@ -1,0 +1,58 @@
+{
+  "sounds": [
+    {
+      "name": "Synth Lead 1",
+      "file": "assets/sounds/synth/synth_lead_1.wav",
+      "category": "synth",
+      "tags": [
+        "lead",
+        "synth"
+      ]
+    },
+    {
+      "name": "Synth Lead 2",
+      "file": "assets/sounds/synth/synth_lead_2.wav",
+      "category": "synth",
+      "tags": [
+        "lead",
+        "synth"
+      ]
+    },
+    {
+      "name": "Synth Lead 3",
+      "file": "assets/sounds/synth/synth_lead_3.wav",
+      "category": "synth",
+      "tags": [
+        "lead",
+        "synth"
+      ]
+    },
+    {
+      "name": "Synth Pad 1",
+      "file": "assets/sounds/synth/synth_pad_1.wav",
+      "category": "synth",
+      "tags": [
+        "pad",
+        "synth"
+      ]
+    },
+    {
+      "name": "Synth Pad 2",
+      "file": "assets/sounds/synth/synth_pad_2.wav",
+      "category": "synth",
+      "tags": [
+        "pad",
+        "synth"
+      ]
+    },
+    {
+      "name": "Synth Pad 3",
+      "file": "assets/sounds/synth/synth_pad_3.wav",
+      "category": "synth",
+      "tags": [
+        "pad",
+        "synth"
+      ]
+    }
+  ]
+}

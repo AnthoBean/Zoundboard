@@ -1,0 +1,68 @@
+{
+  "primary": {
+    "black": "#000000",
+    "white": "#FFFFFF"
+  },
+  "accent": {
+    "magenta": "#FF0097",
+    "orange": "#FF6600",
+    "green": "#339933"
+  },
+  "ui": {
+    "background": {
+      "dark": "#000000",
+      "light": "#FFFFFF"
+    },
+    "text": {
+      "primary": {
+        "dark": "#FFFFFF",
+        "light": "#000000"
+      },
+      "secondary": {
+        "dark": "#CCCCCC",
+        "light": "#333333"
+      }
+    },
+    "interactive": {
+      "hover": {
+        "magenta": "#FF339D",
+        "orange": "#FF8533",
+        "green": "#5CB85C"
+      },
+      "active": {
+        "magenta": "#CC0078",
+        "orange": "#CC5200",
+        "green": "#297A29"
+      }
+    }
+  },
+  "gradients": {
+    "minimal": {
+      "magenta": ["#FF0097", "#CC0078"],
+      "orange": ["#FF6600", "#CC5200"],
+      "green": ["#339933", "#297A29"]
+    }
+  },
+  "themes": {
+    "default": {
+      "background": "#000000",
+      "text": "#FFFFFF",
+      "accent": "#FF0097"
+    },
+    "orange": {
+      "background": "#000000",
+      "text": "#FFFFFF",
+      "accent": "#FF6600"
+    },
+    "green": {
+      "background": "#000000",
+      "text": "#FFFFFF",
+      "accent": "#339933"
+    },
+    "light": {
+      "background": "#FFFFFF",
+      "text": "#000000",
+      "accent": "#FF0097"
+    }
+  }
+}

@@ -1,0 +1,336 @@
+/**
+ * ZoundBoard - Zune-inspired Music Sequencer
+ * Metro UI Dialog Styles
+ * 
+ * This file contains styles for Metro UI-inspired dialog boxes
+ * and the sound selector interface.
+ */
+
+/* Dialog backdrop */
+.metro-dialog-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+/* Base dialog styles */
+.metro-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-border);
+    animation: metro-dialog-appear 0.2s ease-out;
+}
+
+/* Dialog animation */
+@keyframes metro-dialog-appear {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -48%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Dialog header */
+.metro-dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.metro-dialog-header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+}
+
+.metro-dialog-close {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.metro-dialog-close:hover {
+    color: var(--color-accent);
+}
+
+.metro-dialog-close svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Dialog body */
+.metro-dialog-body {
+    flex: 1;
+    overflow: auto;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dialog footer */
+.metro-dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 24px;
+    border-top: 1px solid var(--color-border);
+    gap: 12px;
+}
+
+/* Sound selector specific styles */
+.sound-selector-dialog {
+    width: 600px;
+    height: 500px;
+}
+
+.sound-selector-dialog .metro-dialog-body {
+    padding: 0;
+    flex-direction: row;
+}
+
+/* Categories sidebar */
+.sound-selector-categories {
+    width: 180px;
+    border-right: 1px solid var(--color-border);
+    overflow-y: auto;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.category-item:hover {
+    background-color: var(--color-hover);
+}
+
+.category-item.active {
+    background-color: var(--color-accent);
+    color: var(--color-text-inverse);
+}
+
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.category-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.category-name {
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+
+/* Sound content area */
+.sound-selector-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Search input */
+.sound-selector-search {
+    padding: 16px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.sound-search-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background-light);
+    color: var(--color-text);
+    transition: border-color 0.2s;
+}
+
+.sound-search-input:focus {
+    border-color: var(--color-accent);
+    outline: none;
+}
+
+/* Sound list */
+.sound-selector-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sound-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sound-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    user-select: none;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.sound-item:hover {
+    background-color: var(--color-hover);
+}
+
+.sound-item.active {
+    background-color: var(--color-accent);
+    color: var(--color-text-inverse);
+}
+
+.sound-item-empty {
+    padding: 24px 16px;
+    text-align: center;
+    color: var(--color-gray);
+    font-style: italic;
+}
+
+.sound-name {
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+
+.sound-preview {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+    border-radius: 50%;
+}
+
+.sound-preview:hover {
+    color: var(--color-accent);
+    background-color: var(--color-background-light);
+}
+
+.sound-item.active .sound-preview {
+    color: var(--color-text-inverse);
+}
+
+.sound-item.active .sound-preview:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sound-preview svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* Make track labels visually indicate they're clickable */
+.track-label.clickable {
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+    position: relative;
+}
+
+.track-label.clickable:hover {
+    color: var(--color-accent);
+    background-color: var(--color-hover);
+}
+
+.track-label.clickable::after {
+    content: '▼';
+    font-size: 0.6rem;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .sound-selector-dialog {
+        width: 95vw;
+        height: 80vh;
+    }
+    
+    .sound-selector-dialog .metro-dialog-body {
+        flex-direction: column;
+    }
+    
+    .sound-selector-categories {
+        width: 100%;
+        height: 60px;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    .category-list {
+        display: flex;
+        height: 100%;
+    }
+    
+    .category-item {
+        padding: 8px 12px;
+        height: 100%;
+    }
+}
+
+/* Focus styles for accessibility */
+.metro-focus-element:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.metro-focus-element:focus:not(:focus-visible) {
+    outline: none;
+}

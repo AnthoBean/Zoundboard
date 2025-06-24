@@ -1,0 +1,55 @@
+{
+  "sounds": [
+    {
+      "name": "Bass Note 1",
+      "file": "assets/sounds/bass/bass_note_1.wav",
+      "category": "bass",
+      "tags": [
+        "bass"
+      ]
+    },
+    {
+      "name": "Bass Note 2",
+      "file": "assets/sounds/bass/bass_note_2.wav",
+      "category": "bass",
+      "tags": [
+        "bass"
+      ]
+    },
+    {
+      "name": "Bass Note 3",
+      "file": "assets/sounds/bass/bass_note_3.wav",
+      "category": "bass",
+      "tags": [
+        "bass"
+      ]
+    },
+    {
+      "name": "Bass Synth 1",
+      "file": "assets/sounds/bass/bass_synth_1.wav",
+      "category": "bass",
+      "tags": [
+        "synth",
+        "bass"
+      ]
+    },
+    {
+      "name": "Bass Synth 2",
+      "file": "assets/sounds/bass/bass_synth_2.wav",
+      "category": "bass",
+      "tags": [
+        "synth",
+        "bass"
+      ]
+    },
+    {
+      "name": "Bass Synth 3",
+      "file": "assets/sounds/bass/bass_synth_3.wav",
+      "category": "bass",
+      "tags": [
+        "synth",
+        "bass"
+      ]
+    }
+  ]
+}

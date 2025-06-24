@@ -1,0 +1,58 @@
+{
+  "sounds": [
+    {
+      "name": "Kick Drum 1",
+      "file": "assets/sounds/kicks/kick_drum_1.wav",
+      "category": "kicks",
+      "tags": [
+        "kicks",
+        "kick"
+      ]
+    },
+    {
+      "name": "Kick Drum 2",
+      "file": "assets/sounds/kicks/kick_drum_2.wav",
+      "category": "kicks",
+      "tags": [
+        "kicks",
+        "kick"
+      ]
+    },
+    {
+      "name": "Kick Drum 3",
+      "file": "assets/sounds/kicks/kick_drum_3.wav",
+      "category": "kicks",
+      "tags": [
+        "kicks",
+        "kick"
+      ]
+    },
+    {
+      "name": "Bass Drum 1",
+      "file": "assets/sounds/kicks/bass_drum_1.wav",
+      "category": "kicks",
+      "tags": [
+        "kicks",
+        "kick"
+      ]
+    },
+    {
+      "name": "Bass Drum 2",
+      "file": "assets/sounds/kicks/bass_drum_2.wav",
+      "category": "kicks",
+      "tags": [
+        "kicks",
+        "kick"
+      ]
+    },
+    {
+      "name": "Bass Drum 3",
+      "file": "assets/sounds/kicks/bass_drum_3.wav",
+      "category": "kicks",
+      "tags": [
+        "kicks",
+        "kick"
+      ]
+    }
+  ]
+}

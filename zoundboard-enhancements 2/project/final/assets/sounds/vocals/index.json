@@ -1,0 +1,58 @@
+{
+  "sounds": [
+    {
+      "name": "Vocal Sample 1",
+      "file": "assets/sounds/vocals/vocal_sample_1.wav",
+      "category": "vocals",
+      "tags": [
+        "vocals",
+        "vocal"
+      ]
+    },
+    {
+      "name": "Vocal Sample 2",
+      "file": "assets/sounds/vocals/vocal_sample_2.wav",
+      "category": "vocals",
+      "tags": [
+        "vocals",
+        "vocal"
+      ]
+    },
+    {
+      "name": "Vocal Sample 3",
+      "file": "assets/sounds/vocals/vocal_sample_3.wav",
+      "category": "vocals",
+      "tags": [
+        "vocals",
+        "vocal"
+      ]
+    },
+    {
+      "name": "Voice Sample 1",
+      "file": "assets/sounds/vocals/voice_sample_1.wav",
+      "category": "vocals",
+      "tags": [
+        "vocals",
+        "vocal"
+      ]
+    },
+    {
+      "name": "Voice Sample 2",
+      "file": "assets/sounds/vocals/voice_sample_2.wav",
+      "category": "vocals",
+      "tags": [
+        "vocals",
+        "vocal"
+      ]
+    },
+    {
+      "name": "Voice Sample 3",
+      "file": "assets/sounds/vocals/voice_sample_3.wav",
+      "category": "vocals",
+      "tags": [
+        "vocals",
+        "vocal"
+      ]
+    }
+  ]
+}

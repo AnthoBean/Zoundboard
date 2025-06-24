@@ -1,0 +1,31 @@
+{
+  "sounds": [
+    {
+      "name": "Snare Drum 1",
+      "file": "assets/sounds/snares/snare_drum_1.wav",
+      "category": "snares",
+      "tags": [
+        "snares",
+        "snare"
+      ]
+    },
+    {
+      "name": "Snare Drum 2",
+      "file": "assets/sounds/snares/snare_drum_2.wav",
+      "category": "snares",
+      "tags": [
+        "snares",
+        "snare"
+      ]
+    },
+    {
+      "name": "Snare Drum 3",
+      "file": "assets/sounds/snares/snare_drum_3.wav",
+      "category": "snares",
+      "tags": [
+        "snares",
+        "snare"
+      ]
+    }
+  ]
+}

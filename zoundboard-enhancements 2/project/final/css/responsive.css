@@ -1,0 +1,495 @@
+/* 
+ * ZoundBoard - Zune-inspired Music Sequencer
+ * Responsive Design Styles
+ * Enhanced with Metro UI responsive principles
+ */
+
+/* Base responsive adjustments */
+@media (max-width: 1200px) {
+    .app-container {
+        padding: 1.5rem;
+    }
+}
+
+/* Tablet-sized devices */
+@media (max-width: 992px) {
+    :root {
+        --font-size-large: 2rem;
+        --font-size-medium: 1.25rem;
+    }
+    
+    .app-container {
+        padding: 1.25rem;
+    }
+    
+    .sequencer-grid {
+        grid-template-rows: repeat(8, 35px);
+        gap: 3px;
+    }
+    
+    .track-label {
+        height: 35px;
+    }
+    
+    .waveform-container {
+        height: 100px;
+    }
+    
+    .transport-controls {
+        gap: 1.5rem;
+    }
+    
+    /* Metro UI specific adjustments for tablets */
+    .app-header h1 {
+        font-size: 1.8rem;
+        letter-spacing: -0.02em;
+    }
+    
+    .metro-tile {
+        padding: var(--metro-spacing-medium);
+    }
+}
+
+/* Mobile landscape and small tablets */
+@media (max-width: 768px) {
+    :root {
+        --font-size-large: 1.75rem;
+        --font-size-medium: 1.1rem;
+        --font-size-small: 0.9rem;
+        --font-size-xs: 0.8rem;
+    }
+    
+    .app-container {
+        padding: 1rem;
+    }
+    
+    .app-header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .sequencer-container {
+        margin-bottom: 1rem;
+    }
+    
+    .sequencer-grid {
+        grid-template-rows: repeat(8, 30px);
+        gap: 2px;
+    }
+    
+    .track-label {
+        height: 30px;
+        width: 60px;
+        font-size: var(--font-size-xs);
+    }
+    
+    .waveform-container {
+        height: 80px;
+    }
+    
+    .transport-controls {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .btn {
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .tempo-control {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    }
+    
+    .tempo-control input[type="range"] {
+        flex: 1;
+        margin: 0 0.5rem;
+    }
+    
+    .effects-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    
+    .effects-container > div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    /* Metro UI specific adjustments for mobile landscape */
+    .app-header h1 {
+        font-size: 1.5rem;
+        letter-spacing: -0.01em;
+        transform: translateX(-5px); /* Adjust the offset for smaller screens */
+    }
+    
+    /* Implement Metro UI panoramic navigation for smaller screens */
+    .panoramic-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0.5rem 0;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Adjust Metro UI tiles for smaller screens */
+    .metro-tile {
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .metro-tile h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Mobile portrait */
+@media (max-width: 576px) {
+    .app-container {
+        padding: 0.75rem;
+    }
+    
+    .app-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .sequencer-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .track-labels {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 0.5rem;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+    
+    .track-labels::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .track-label {
+        height: auto;
+        width: auto;
+        padding: 0.25rem 0.5rem;
+        flex-shrink: 0;
+        margin-right: 0.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0; /* Metro UI uses sharp corners */
+    }
+    
+    .sequencer-grid {
+        grid-template-rows: repeat(8, 25px);
+        gap: 2px;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+    
+    .sequencer-grid::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .grid-cell {
+        min-width: 25px;
+    }
+    
+    .waveform-container {
+        height: 70px;
+    }
+    
+    .transport-controls {
+        justify-content: center;
+    }
+    
+    .btn {
+        padding: 0.3rem 0.6rem;
+        font-size: var(--font-size-small);
+    }
+    
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .btn-viz-mode {
+        top: 4px;
+        right: 4px;
+        padding: 2px 6px !important;
+    }
+    
+    /* Metro UI specific adjustments for mobile portrait */
+    .app-header {
+        border-bottom: none; /* Remove border on small screens */
+    }
+    
+    .app-footer {
+        border-top: none; /* Remove border on small screens */
+        margin-top: 1rem;
+    }
+    
+    /* Implement Metro UI pivot navigation for mobile */
+    .pivot-navigation {
+        display: flex;
+        overflow-x: auto;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+    
+    .pivot-navigation::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .pivot-item {
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        font-size: var(--font-size-small);
+        color: var(--color-gray);
+        position: relative;
+    }
+    
+    .pivot-item.active {
+        color: var(--color-magenta);
+    }
+    
+    .pivot-item.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-magenta);
+    }
+    
+    /* Stack buttons vertically on very small screens */
+    @media (max-width: 400px) {
+        .transport-controls {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        
+        .btn {
+            justify-content: center;
+        }
+        
+        /* Metro UI tile adjustments for very small screens */
+        .metro-tile {
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metro-tile h2 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+    }
+}
+
+/* Landscape orientation specific adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    .app-container {
+        padding: 0.5rem;
+    }
+    
+    .app-header {
+        margin-bottom: 0.75rem;
+    }
+    
+    .app-main {
+        gap: 0.75rem;
+    }
+    
+    .waveform-container {
+        height: 60px;
+    }
+    
+    .sequencer-grid {
+        grid-template-rows: repeat(8, 22px);
+        gap: 2px;
+    }
+    
+    .track-label {
+        height: 22px;
+        font-size: 0.7rem;
+    }
+    
+    .app-footer {
+        margin-top: 0.75rem;
+    }
+    
+    /* Metro UI specific adjustments for landscape */
+    .app-header h1 {
+        font-size: 1.25rem;
+    }
+    
+    /* Optimize Metro UI layout for landscape */
+    .metro-tile {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* High-DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .grid-cell {
+        border-radius: 0; /* Metro UI uses sharp corners */
+    }
+    
+    .btn::after {
+        height: 1px;
+    }
+    
+    /* Enhance typography for high-DPI screens */
+    body {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Dark mode preference - OLED optimization */
+@media (prefers-color-scheme: dark) {
+    /* Already dark by default, but add OLED optimizations */
+    body {
+        background-color: #000000; /* True black for OLED efficiency */
+    }
+    
+    .waveform-container {
+        box-shadow: 0 0 20px rgba(255, 0, 151, 0.1);
+    }
+    
+    /* High contrast elements for dark mode */
+    .btn-play {
+        color: var(--color-magenta);
+    }
+    
+    .btn-randomize {
+        color: var(--color-orange);
+    }
+    
+    .grid-cell.active {
+        background-color: var(--color-magenta);
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .grid-cell.active {
+        animation: none;
+    }
+    
+    .grid-cell.playing {
+        animation: none;
+    }
+    
+    /* Disable Metro UI animations for reduced motion */
+    .metro-tile:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .waveform-container:hover {
+        transform: none;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .btn:hover {
+        transform: none;
+    }
+    
+    .btn:hover::after {
+        width: 0;
+    }
+    
+    .grid-cell:hover {
+        transform: none;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .track-label:hover {
+        transform: none;
+    }
+    
+    /* Add active state for touch - Metro UI style */
+    .btn:active {
+        transform: translateY(1px);
+    }
+    
+    .btn:active::after {
+        width: 100%;
+    }
+    
+    .grid-cell:active {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Metro UI touch optimizations */
+    .metro-tile:active {
+        transform: scale(0.98);
+    }
+    
+    /* Larger touch targets for Metro UI elements */
+    .track-label {
+        padding: 0.5rem;
+        min-height: 44px; /* Minimum touch target size */
+    }
+    
+    .btn {
+        min-height: 44px; /* Minimum touch target size */
+    }
+    
+    /* Enhance feedback for touch interactions */
+    .touch-feedback {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .touch-feedback::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+    
+    .touch-feedback:active::after {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 1;
+    }
+}

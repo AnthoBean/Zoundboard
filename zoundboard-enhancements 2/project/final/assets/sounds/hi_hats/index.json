@@ -1,0 +1,58 @@
+{
+  "sounds": [
+    {
+      "name": "Hi Hat 1",
+      "file": "assets/sounds/hi_hats/hi_hat_1.wav",
+      "category": "hi_hats",
+      "tags": [
+        "hi-hat",
+        "hi_hats"
+      ]
+    },
+    {
+      "name": "Hi Hat 2",
+      "file": "assets/sounds/hi_hats/hi_hat_2.wav",
+      "category": "hi_hats",
+      "tags": [
+        "hi-hat",
+        "hi_hats"
+      ]
+    },
+    {
+      "name": "Hi Hat 3",
+      "file": "assets/sounds/hi_hats/hi_hat_3.wav",
+      "category": "hi_hats",
+      "tags": [
+        "hi-hat",
+        "hi_hats"
+      ]
+    },
+    {
+      "name": "Hihat 1",
+      "file": "assets/sounds/hi_hats/hihat_1.wav",
+      "category": "hi_hats",
+      "tags": [
+        "hi-hat",
+        "hi_hats"
+      ]
+    },
+    {
+      "name": "Hihat 2",
+      "file": "assets/sounds/hi_hats/hihat_2.wav",
+      "category": "hi_hats",
+      "tags": [
+        "hi-hat",
+        "hi_hats"
+      ]
+    },
+    {
+      "name": "Hihat 3",
+      "file": "assets/sounds/hi_hats/hihat_3.wav",
+      "category": "hi_hats",
+      "tags": [
+        "hi-hat",
+        "hi_hats"
+      ]
+    }
+  ]
+}

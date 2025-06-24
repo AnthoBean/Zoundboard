@@ -1,0 +1,405 @@
+/* 
+ * ZoundBoard - Zune-inspired Music Sequencer
+ * Animation and Transition Styles
+ * Enhanced with Metro UI motion design principles
+ */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide In Animations - Enhanced with Metro UI smoothness */
+@keyframes slideInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(-10px); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Metro UI Page Transition */
+@keyframes metroPageTransition {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.metro-page-transition {
+    animation: metroPageTransition 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Cell Activation Animation - Metro UI style */
+@keyframes activateCell {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.grid-cell.active {
+    animation: activateCell 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Playing Cell Animation - Metro UI style */
+@keyframes pulse {
+    from { box-shadow: 0 0 8px 2px rgba(255, 0, 151, 0.6); }
+    to { box-shadow: 0 0 12px 4px rgba(255, 0, 151, 0.8); }
+}
+
+.grid-cell.playing {
+    animation: pulse 0.15s cubic-bezier(0.1, 0.9, 0.2, 1) infinite alternate; /* Metro UI easing */
+}
+
+/* Button Animation - Metro UI style */
+@keyframes playingPulse {
+    0% { text-shadow: 0 0 0 rgba(51, 153, 51, 0); }
+    100% { text-shadow: 0 0 10px rgba(51, 153, 51, 0.5); }
+}
+
+.btn-play.playing {
+    animation: playingPulse 2s cubic-bezier(0.1, 0.9, 0.2, 1) infinite alternate; /* Metro UI easing */
+}
+
+/* Randomize Button Animation - Metro UI style */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.btn-randomize.animating .icon {
+    animation: spin 0.5s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Genius Feedback Animation - Metro UI style */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translate(-50%, -60%); }
+    20% { opacity: 1; transform: translate(-50%, -50%); }
+    80% { opacity: 1; transform: translate(-50%, -50%); }
+    100% { opacity: 0; transform: translate(-50%, -40%); }
+}
+
+/* Visualization Mode Button Animation - Metro UI style */
+@keyframes flash {
+    0% { background-color: rgba(0, 0, 0, 0.5); }
+    50% { background-color: var(--color-magenta); }
+    100% { background-color: rgba(0, 0, 0, 0.5); }
+}
+
+.btn-viz-mode.animating {
+    animation: flash 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Grid Cell Ripple Effect - Metro UI style */
+@keyframes ripple {
+    0% { transform: scale(0.3); opacity: 1; }
+    100% { transform: scale(3); opacity: 0; }
+}
+
+.grid-cell.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+    opacity: 0;
+    animation: ripple 0.6s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Sequencer Step Highlight Animation - Metro UI style */
+@keyframes stepHighlight {
+    0% { opacity: 0.8; }
+    50% { opacity: 0.4; }
+    100% { opacity: 0.8; }
+}
+
+.grid-cell.playing.active {
+    animation: stepHighlight 0.2s cubic-bezier(0.1, 0.9, 0.2, 1) infinite alternate; /* Metro UI easing */
+}
+
+/* Filter Toggle Animation - Metro UI style */
+@keyframes enabledPulse {
+    0% { text-shadow: 0 0 0 rgba(51, 153, 51, 0); }
+    100% { text-shadow: 0 0 8px rgba(51, 153, 51, 0.5); }
+}
+
+.btn-filter[style*="color: var(--color-green)"] {
+    animation: enabledPulse 2s cubic-bezier(0.1, 0.9, 0.2, 1) infinite alternate; /* Metro UI easing */
+}
+
+/* Background Animation - Metro UI style */
+@keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Canvas Ripple Effect - Metro UI style */
+@keyframes canvasRipple {
+    0% { transform: scale(0.98); filter: brightness(1.5); }
+    100% { transform: scale(1); filter: brightness(1); }
+}
+
+.ripple-effect {
+    animation: canvasRipple 0.5s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Clear Button Flash Animation - Metro UI style */
+@keyframes clearFlash {
+    0% { color: var(--color-gray); }
+    50% { color: var(--color-white); }
+    100% { color: var(--color-gray); }
+}
+
+.btn-clear.animating {
+    animation: clearFlash 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Visualizer Mode Change Animation - Metro UI style */
+@keyframes modeChange {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+    90% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+}
+
+.mode-feedback {
+    animation: modeChange 1s cubic-bezier(0.1, 0.9, 0.2, 1) forwards; /* Metro UI easing */
+}
+
+/* Track Label Hover Animation - Metro UI style */
+.track-label {
+    position: relative;
+}
+
+.track-label::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-magenta);
+    transition: width var(--animation-speed-medium) cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+.track-label:hover::after {
+    width: 100%;
+}
+
+/* Button Press Animation - Metro UI style */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Tempo Slider Animation - Metro UI style */
+.tempo-control input[type="range"]::-webkit-slider-thumb {
+    transition: transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1), box-shadow 0.2s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+.tempo-control input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 8px rgba(255, 0, 151, 0.6);
+}
+
+/* Sound Selection Animation - Metro UI style */
+.sound-dropdown {
+    animation: fadeInDown 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Waveform Container Animation - Metro UI style */
+.waveform-container {
+    transition: box-shadow 0.3s cubic-bezier(0.1, 0.9, 0.2, 1), transform 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+.waveform-container:hover {
+    transform: translateY(-2px);
+}
+
+/* App Container Entry Animation - Metro UI style */
+.app-container {
+    animation: fadeIn 0.8s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Footer Animation - Metro UI style */
+.app-footer {
+    animation: fadeIn 1s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Metro UI Tile Flip Animation */
+@keyframes tileFlip {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(180deg); }
+}
+
+.metro-tile-flip {
+    animation: tileFlip 0.5s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+    backface-visibility: hidden;
+}
+
+/* Metro UI Tile Update Animation */
+@keyframes tileUpdate {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+.metro-tile-update {
+    animation: tileUpdate 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Metro UI Panorama Transition */
+@keyframes panoramaSlide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.panorama-transition {
+    animation: panoramaSlide 0.5s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Metro UI Button Hover Effect */
+.metro-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.metro-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+.metro-btn:hover::before {
+    transform: translateX(100%);
+}
+
+/* Metro UI Text Selection Animation */
+@keyframes textSelect {
+    0% { background-color: transparent; }
+    100% { background-color: var(--color-magenta); color: var(--color-white); }
+}
+
+.text-select {
+    animation: textSelect 0.2s cubic-bezier(0.1, 0.9, 0.2, 1) forwards; /* Metro UI easing */
+}
+
+/* Metro UI Pivot Animation */
+@keyframes pivotSlide {
+    0% { transform: translateX(30px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.pivot-content {
+    animation: pivotSlide 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Metro UI List Item Animation */
+@keyframes listItemEnter {
+    0% { transform: translateX(-20px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.list-item-enter {
+    animation: listItemEnter 0.2s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Metro UI Notification Animation */
+@keyframes notificationEnter {
+    0% { transform: translateY(-20px); opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    90% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-20px); opacity: 0; }
+}
+
+.notification {
+    animation: notificationEnter 4s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Metro UI Focus Animation */
+@keyframes metroFocus {
+    0% { box-shadow: 0 0 0 0 rgba(255, 0, 151, 0); }
+    50% { box-shadow: 0 0 0 2px rgba(255, 0, 151, 0.6); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 0, 151, 0); }
+}
+
+.metro-focus {
+    animation: metroFocus 1.5s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; /* Metro UI easing */
+}
+
+/* Metro UI Staggered Entrance Animation */
+.staggered-item {
+    opacity: 0;
+}
+
+.staggered-item.visible {
+    animation: fadeInUp 0.5s cubic-bezier(0.1, 0.9, 0.2, 1) forwards; /* Metro UI easing */
+}
+
+/* Apply staggered delay to children */
+.staggered-container > *:nth-child(1) { animation-delay: 0.05s; }
+.staggered-container > *:nth-child(2) { animation-delay: 0.1s; }
+.staggered-container > *:nth-child(3) { animation-delay: 0.15s; }
+.staggered-container > *:nth-child(4) { animation-delay: 0.2s; }
+.staggered-container > *:nth-child(5) { animation-delay: 0.25s; }
+.staggered-container > *:nth-child(6) { animation-delay: 0.3s; }
+.staggered-container > *:nth-child(7) { animation-delay: 0.35s; }
+.staggered-container > *:nth-child(8) { animation-delay: 0.4s; }
+.staggered-container > *:nth-child(9) { animation-delay: 0.45s; }
+.staggered-container > *:nth-child(10) { animation-delay: 0.5s; }
+
+/* Metro UI Tile Hover Animation */
+.metro-tile {
+    transition: transform 0.3s cubic-bezier(0.1, 0.9, 0.2, 1), box-shadow 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+.metro-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Metro UI Content Transition */
+@keyframes contentTransition {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.content-transition {
+    animation: contentTransition 0.3s cubic-bezier(0.1, 0.9, 0.2, 1); /* Metro UI easing */
+}
+
+/* Reduced Motion Preference Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .grid-cell.active {
+        animation: none;
+    }
+    
+    .grid-cell.playing {
+        animation: none;
+    }
+}

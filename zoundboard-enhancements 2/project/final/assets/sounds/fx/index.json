@@ -1,0 +1,76 @@
+{
+  "sounds": [
+    {
+      "name": "Sound Effect 1",
+      "file": "assets/sounds/fx/sound_effect_1.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    },
+    {
+      "name": "Sound Effect 2",
+      "file": "assets/sounds/fx/sound_effect_2.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    },
+    {
+      "name": "Sound Effect 3",
+      "file": "assets/sounds/fx/sound_effect_3.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    },
+    {
+      "name": "Riser 1",
+      "file": "assets/sounds/fx/riser_1.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    },
+    {
+      "name": "Riser 2",
+      "file": "assets/sounds/fx/riser_2.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    },
+    {
+      "name": "Riser 3",
+      "file": "assets/sounds/fx/riser_3.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    },
+    {
+      "name": "Impact 1",
+      "file": "assets/sounds/fx/impact_1.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    },
+    {
+      "name": "Impact 2",
+      "file": "assets/sounds/fx/impact_2.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    },
+    {
+      "name": "Impact 3",
+      "file": "assets/sounds/fx/impact_3.wav",
+      "category": "fx",
+      "tags": [
+        "fx"
+      ]
+    }
+  ]
+}
